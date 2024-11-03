@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="_images/apple-touch-icon.png">
+    <link href="./Css/main.css" rel="stylesheet" media="screen, projection">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../windowstate.js"></script>
+    <script src="../archivechange.js"></script>
+    <script src="Lettering.js-master/jquery.lettering.js"></script>
+    <script src ="validation.js"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+
+    <header id="pageHeader" role="banner">
+        <hgroup>
+            <h1><a href="./index.html">Desolve</a></h1>
+            <h2>Fine Urban Photography</h2>
+        </hgroup>
+    </header>
+
+
+    <nav id="mainNav" role="navigation" class="cf">
+        <h2> </h2>
+        <ul class="topMenu">
+            <li><a href="./index.html" title="Home" class="home">Home</a></li>
+
+            <li class="hover">
+                <h3>Galleries</h3>
+                <ul class="submenu">
+                    <li><a href="gallery/galleries.htm" title="all galleries" class="all">All Galleries</a></li>
+                    <li><a href="gallery/recent.htm" title="recent galleries" class="recent">Recent Galleries</a></li>
+                    <li><a href="gallery/archived.htm" title="archived galleries" class="archived">Archived
+                            Galleries</a></li>
+                    <li><a href="gallery/favorites.htm" title="member favorites" class="favorites">Member Favorites</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="hover">
+                <h3>Gear</h3>
+                <ul class="submenu">
+                    <li><a href="gear/gear.htm" title="all gear" class="gear">Gear</a>
+                    <li><a href="gear/cameras.htm" title="cameras" class="cameras">Cameras</a></li>
+                    <li><a href="gear/lenses.htm" title="lenses" class="lenses">Lenses</a></li>
+                    <li><a href="gear/bags.htm" title="bags" class="bags">Bags</a></li>
+                    <li><a href="gear/apps.htm" title="our favorite apps" class="apps">Favorite Apps</a></li>
+                </ul>
+            </li>
+            <li><a href="./Contact.html" title="Get in touch" class="interact"><em>Interact</em></a></li>
+            <li class="hover">
+                <h3>Shop</h3>
+                <ul class="submenu">
+                    <li><a href="shop/shop.htm" title="Buy our stuff" class="shop">Shop</a>
+                    <li><a href="shop/prints.htm" title="cameras" class="cameras">Prints</a></li>
+                    <li><a href="shop/clothes.htm" title="clothes" class="clothes">Clothes</a></li>
+                    <li><a href="shop/accessories.htm" title="accessories" class="accessories">Accessories</a></li>
+                </ul>
+            </li>
+            <li><a href="./about.html" title="Who are you guys?" class="about">About</a></li>
+        </ul>
+
+
+
+    </nav>
+
+    <section id="content" role="main">
+
+
+        <article id="contact" class="cf">
+            <h1>Contact us</h1>
+            <section class="social">
+                <h2>Feel free to call us, we could totally hang out.</h2>
+                <p><a href="tel:8885551234" title="ring ring ring" class="phone">888-555-1234</a></p>
+                <h2>Or, maybe you're the more social type...</h2>
+                <ul>
+
+
+                    <li><a href="http://www.flickr.com/" title="Join our Flickr group" class="flickr">Flickr</a></li>
+                    <li><a href="http://www.facebook.com" title="Be our friend...PLEASE" class="facebook">Facebook</a>
+                    </li>
+                    <li><a href="http://linkedin.com" title="Please join our professional network on LinkedIn"
+                            class="linked">LinkedIn</a></li>
+                    <li><a href="https://plus.google.com" title="help us figure out Google+" class="google">Google+</a>
+                    </li>
+                    <li><a href="http://www.youtube.com" class="youtube">YouTube</a></li>
+                </ul>
+            </section>
+
+
+
+
+
+            <section class="contact">
+                <h2>Or drop us a line....</h2>
+                <form id="frmContact" action="https://www.desolve.org" method="post">
+
+                    <fieldset title="About you">
+                        <legend><span>About you</span></legend>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" tabindex="10" placeholder="Your name" >
+                        <p><span id = "errorMessage"></span></p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" tabindex="20" placeholder="valid email" >
+                        <p><span id = "errorMessage1"></span></p>
+                        <label for="website">Personal website</label>
+                        <input type="url" name="website" id="website" tabindex="30" placeholder="website">
+                        <p><span id = "errorMessage2"></span></p>
+                    </fieldset>
+
+
+                    <fieldset title="Your turn">
+                        <legend><span>Your turn</span></legend>
+                        <p>What, exactly then, are you after?</p>
+                        <input type="radio" name="intent" value="suggest" id="suggest" tabindex="40">
+                        <label for="suggest" class="inline">Suggest a city</label><br>
+                        <input type="radio" name="intent" value="submit" id="submit1" tabindex="50">
+                        <label for="submit" class="inline">Submit my own gallery</label><br>
+                        <input type="radio" name="intent" value="comment" id="comment" tabindex="60">
+                        <label for="comment" class="inline">Comment on a gallery</label><br>
+                        <input type="radio" name="intent" value="friends" id="friends" tabindex="70">
+                        <label for="friends" class="inline"> Make friends</label><br>
+                        <label for="discourse">Pour out your heart</label>
+                        <textarea id="discourse" name="discourse" tabindex="80" rows="7"
+                            placeholder="This is where your thoughts go">
+         </textarea>
+                        <input type="submit" name="submit" id="submit" value="submit" tabindex="90">
+                    </fieldset>
+                    
+
+                    <p><span id = "errorMessage3"></span></p>
+
+                   
+
+
+                </form>
+            </section>
+
+
+
+        </article>
+        <aside role="complementary">
+            <nav class="archives">
+                <h2>Archived Galleries</h2>
+                <ul>
+                    <li><a href="charlotte.htm" title="charlotte">Charlotte</a></li>
+                    <li><a href="miami.htm" title="miami">Miami</a></li>
+                    <li><a href="denver.htm" title="denver">Denver</a></li>
+                    <li><a href="boston.htm" title="boston">Boston</a></li>
+                    <li><a href="cincinnati.htm" title="cincinnati">Cincinnati</a></li>
+                    <li><a href="lost_angeles.htm" title="los angeles">Los Angeles</a></li>
+                    <li><a href="charleston.htm" title="charleston">Charleston</a></li>
+                    <li><a href="dallas.htm" title="dallas">Dallas</a></li>
+                    <li><a href="providence.htm" title="providence">Providence</a></li>
+                    <li><a href="birmingham.htm" title="birmingham">Birmingham</a></li>
+                    <li><a href="cleveland.htm" title="cleveland">Cleveland</a></li>
+                    <li><a href="baltimore.htm" title="balitmore">Baltimore</a></li>
+                </ul>
+            </nav>
+
+
+
+            <section class="contest">
+                <h2>This month's contest</h2>
+                <img src="./images/contest.jpg" width="200" height="200" alt="This month's contest">
+                <p>Do you know where this is? Send your guess to us via the contact page. All correct entries will be
+                    added to a drawing at the end of the month. The randomly selected winner will win a framed print of
+                    their choice from our shop. Cool! <span class="enter"><a href="#"
+                            title="enter our contest">Enter</a></span></p>
+            </section>
+
+            <section class="contest">
+                <h2>Previous contest</h2>
+                <img src="./images/previous.jpg" width="200" height="200" alt="This month's contest">
+                <h3>Cultural District, Denver CO</h3>
+                <p>Congratulations to Daniel Weston, who correctly identified this shot as being located in the cultural
+                    district of Denver, Colorado! For his efforts, Daniel wins a limited edition print of this shot. Way
+                    to go Daniel!</p>
+            </section>
+
+        </aside>
+    </section>
+
+
+    <footer id="pageFooter">
+        <form action="https://desolve.org" method="post" class="search-form" role="search">
+            <label for="search">Looking for something?</label>
+            <input type="search" placeholder="Search" title="Search" class="q" name="search" id="search">
+            <input type="submit" class="submit" value="Go" name="submit">
+        </form>
+        <p></p>
+       <p class="notice">all content &copy; 2023 desolve.org <a href="#" rel="license"></a></p>
+    </footer>
+
+   
+
+
+</body>
+
+
+</html>
